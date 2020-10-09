@@ -106,6 +106,7 @@ function handleCharBinding(cm, e, ch) {
 let lastStoppedKey = null
 export function onKeyDown(e) {
   let cm = this
+  cm.state.keyCode = e.keyCode
   if (e.target && e.target != cm.display.input.getField()) return
   cm.curOp.focus = activeElt()
   if (signalDOMEvent(cm, e)) return

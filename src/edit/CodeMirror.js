@@ -59,6 +59,7 @@ export function CodeMirror(place, options) {
     draggingText: false,
     highlight: new Delayed(), // stores highlight worker timeout
     keySeq: null,  // Unfinished key sequence
+    keyCode: null,
     specialChars: null
   }
 
